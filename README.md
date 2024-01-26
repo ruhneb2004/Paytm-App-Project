@@ -29,7 +29,7 @@ This is the main page where the functionality lies. Here some random amount of m
 
 <img width="1680" alt="Screenshot 2024-01-26 at 8 41 25 PM" src="https://github.com/ruhneb2004/Paytm-App-Project/assets/146971477/5e6892a0-d830-43d0-97b3-c54207f2bd0f">
 
-That's all if you sticked through till the end thanks, I appreciate it :)
+That's all if you sticked through till the end, thanks I appreciate it :)
 
 
 
