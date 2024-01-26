@@ -12,7 +12,7 @@ Here the details of the user is taken and then its cross checked in the db to ch
 ##Signin Page
 This page checks whether user is valid or not and then allows the user to enter into the dashboard. The user on successful login will recieve a token and this will be used in the other part of the app to authorize the user. Here also the input validation checks are present.<img width="1680" alt="Screenshot 2024-01-26 at 8 28 17 PM" src="https://github.com/ruhneb2004/Paytm-App-Project/assets/146971477/7e6b3e53-a0e2-418d-a264-f2fe28896f4c">
 
-<img width="1680" alt="Screenshot 2024-01-26 at 8 30 07 PM" src="https://github.com/ruhneb2004/Paytm-App-Project/assets/146971477/5da372a1-7430-46bd-99e2-76002bf258f0">
+
 <img width="1680" alt="Screenshot 2024-01-26 at 8 28 17 PM" src="https://github.com/ruhneb2004/Paytm-App-Project/assets/146971477/9cb9b97a-01de-474d-aaa4-91d06cf781fa">
 <img width="1680" alt="Screenshot 2024-01-26 at 8 28 09 PM" src="https://github.com/ruhneb2004/Paytm-App-Project/assets/146971477/eda8bf27-73da-4550-9d56-1b41d4b38a47">
 
