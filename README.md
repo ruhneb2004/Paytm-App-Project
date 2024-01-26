@@ -15,6 +15,7 @@ This page checks whether user is valid or not and then allows the user to enter 
 
 
 
+<img width="1680" alt="Screenshot 2024-01-26 at 8 46 56 PM" src="https://github.com/ruhneb2004/Paytm-App-Project/assets/146971477/0518bf4b-7157-436c-8815-90e55c74fb84">
 
 <img width="1680" alt="Screenshot 2024-01-26 at 8 28 17 PM" src="https://github.com/ruhneb2004/Paytm-App-Project/assets/146971477/9cb9b97a-01de-474d-aaa4-91d06cf781fa">
 <img width="1680" alt="Screenshot 2024-01-26 at 8 28 09 PM" src="https://github.com/ruhneb2004/Paytm-App-Project/assets/146971477/eda8bf27-73da-4550-9d56-1b41d4b38a47">
