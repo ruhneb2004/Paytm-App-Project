@@ -1,4 +1,4 @@
-## Build a basic version of PayTM
+Basic version of PayTM
 
 This is a simple imitation of the paytm app. There is no banking api's used.
 
