@@ -1,6 +1,6 @@
 const authMiddleware = require("../middleware");
 
-const { Account } = require("../db");
+const { Account, User } = require("../db");
 const mongoose = require("mongoose");
 const express = require("express");
 
@@ -25,42 +25,43 @@ router.post("/transfer", authMiddleware, async (req, res) => {
   try {
     const session = await mongoose.startSession();
     session.startTransaction();
-
     const userId = req.userId;
+
     const { to, amount } = req.body;
 
     const fromAccount = await Account.findOne({ userId }).session(session);
+
     if (!fromAccount || fromAccount.balance < amount) {
       session.abortTransaction();
-      session.endSession();
-      return res.status(400).json({ mess: "Some error occured!" });
     }
 
     const toAccount = await Account.findOne({ userId: to }).session(session);
+    console.log("to:" + to);
+    console.log(toAccount);
+
     if (!toAccount) {
       session.abortTransaction();
-      session.endSession();
-      return res.status(400).json({ mess: "Invalid Account!" });
     }
 
-    await User.updateOne(
+    const newUser = await Account.updateOne(
       { userId },
       {
         $inc: {
           balance: -amount,
         },
-      }
+      },
+      { new: true }
     ).session(session);
-    await User.updateOne(
+    await Account.updateOne(
       { userId: to },
       {
         $inc: {
           balance: amount,
         },
-      }
+      },
+      { new: true }
     ).session(session);
     await session.commitTransaction();
-    session.endSession();
     res.status(200).json({ mess: "Transaction successful" });
   } catch (err) {
     console.log("🚀 ~ router.post ~ err:", err);
